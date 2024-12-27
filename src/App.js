@@ -46,9 +46,9 @@ export default function App() {
 
     const loadMessages = async () => {
       try {
-        const messages = await fetchFromInstantDB('/messages'); // Simulate InstantDB API call
+        const messages = await fetchFromInstantDB('/messages'); 
         dispatch({ type: 'SET_MESSAGES', payload: messages });
-        saveMessagesToIndexedDB(messages); // Save to IndexedDB for offline use
+        saveMessagesToIndexedDB(messages); 
       } catch {
         const messages = await getMessagesFromIndexedDB();
         dispatch({ type: 'SET_MESSAGES', payload: messages });

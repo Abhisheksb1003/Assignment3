@@ -1,4 +1,3 @@
-// components/MessageInput.js
 import React, { useState } from 'react';
 import { useAppContext } from '../App';
 

@@ -1,11 +1,11 @@
-/* Chat Window */
+
 .chat-window {
     display: flex;
     flex-direction: column;
     height: 100%;
   }
   
-  /* Chat Header with Profile Picture and Name */
+  
   .chat-header {
     display: flex;
     align-items: center;

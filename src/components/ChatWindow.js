@@ -17,7 +17,7 @@ export const ChatWindow = ({ contactId, messages, onSendMessage, contactDetails 
 
   return (
     <div className="chat-window">
-      {/* Chat Header with Profile Picture and Name */}
+     
       <div className="chat-header">
         {contactDetails.image ? (
           <img src={contactDetails.image} alt="Profile" className="chat-header-dp" />
@@ -27,7 +27,7 @@ export const ChatWindow = ({ contactId, messages, onSendMessage, contactDetails 
         <span className="chat-header-name">{contactDetails.name}</span>
       </div>
 
-      {/* Chat Messages */}
+      
       <div className="chat-messages">
         {messages.map((message, index) => (
           <div
@@ -39,7 +39,7 @@ export const ChatWindow = ({ contactId, messages, onSendMessage, contactDetails 
         ))}
       </div>
 
-      {/* Chat Input */}
+     
       <div className="chat-input-container">
         <input
           type="text"
